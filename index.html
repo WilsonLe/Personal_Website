@@ -24,9 +24,9 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a c>About me</a></li>
-                        <li><a href="#">My projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li id='about'>About me</li>
+                        <li id='myprojects'>My projects</a></li>
+                        <li id='contact'>Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -41,7 +41,7 @@
 
         </header>
 
-        <div class="about" id='about-slide'>
+        <div class="about">
             <div class='aboutpic'>
 
             </div>
@@ -69,36 +69,35 @@
             $(".menu-icon").click(function () {
                 $("nav ul").toggleClass("showing");
             });
-            // Home hover highlight
-            $(".home").hover(
-                function () {
-                    $(this).toggleClass("highlight");
-                });
-            // Home link
-            $(".home").click(
-                function () {
-                    window.location.href = "http://wilsonle.me";
-                });
-            $(".home").hover(
-                function () {
-                    $('.home').css('cursor', 'pointer');
-                });
-            //Denison link
-            $(".subtitle a").click(
-                function () {
-                    window.open("https://denison.edu/","_blank") ;
-                });
-            //Denison underline
-            $(".subtitle a").hover(
-                function () {
-                    $('.subtitle a').css('cursor', 'pointer');
-                    $('.subtitle a').css('text-decoration', 'underline')
-                },
-                function () {
-                    $('.subtitle a').css('text-decoration', '')
-                }
-            );
-
+            //Home hover highlight/pointer
+            $(".home").hover(function () {
+                $(this).toggleClass("highlight");
+                $('.home').css('cursor', 'pointer');
+            });
+            //Home click slide
+            $(".home").click(function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            //Denison hover underline/pointer
+            $(".subtitle a").hover(function () {
+                $('.subtitle a').css('cursor', 'pointer');
+                $('.subtitle a').css('text-decoration', 'underline')
+            }, function () {
+                $('.subtitle a').css('text-decoration', '')
+            });
+            //Denison click link
+            $(".subtitle a").click(function () {
+                window.open("https://denison.edu/", "_blank");
+            });
+            //About hover highlight/pointer
+            $("#about").hover(function () {
+                $(this).toggleClass("highlight");
+                $('#about').css('cursor', 'pointer');
+            });
+            //About click slide
+            $("#about").click(function () {
+                window.scrollTo({ top: $("header").height(), behavior: 'smooth' });
+            });
             // Scrolling Effect
             $(window).on("scroll", function () {
                 if ($(window).scrollTop()) {
