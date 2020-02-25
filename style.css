@@ -112,6 +112,9 @@ nav ul li a {
     color: #fff;
     display: none;
 }
+.menu-icon i{
+    padding-right: 5vw;
+}
 .about{
     display:flex;
     flex-direction: row;
