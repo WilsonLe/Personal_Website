@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Wilson Le</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+
+                <div class="home">
+                    Home
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li id='about'>About me</li>
+                        <li id='myprojects'>My projects</a></li>
+                        <li id='contact'>Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class='titles'>
+                <div class='title'>
+                    WILSON LE
+                </div>
+                <div class='subtitle'>
+                    Computer Science freshman <a>@Denison University</a>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="about">
+            <div class='aboutpic'>
+
+            </div>
+            <div class='abouttext'>
+                <div id='abouttitle'>
+                    About me
+                </div>
+                <div id='aboutcontent'>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            // Menu-toggle button
+            $(".menu-icon").click(function () {
+                $("nav ul").toggleClass("showing");
+            });
+            //Home hover highlight/pointer
+            $(".home").hover(function () {
+                $(this).toggleClass("highlight");
+                $('.home').css('cursor', 'pointer');
+            });
+            //Home click slide
+            $(".home").click(function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            //Denison hover underline/pointer
+            $(".subtitle a").hover(function () {
+                $('.subtitle a').css('cursor', 'pointer');
+                $('.subtitle a').css('text-decoration', 'underline')
+            }, function () {
+                $('.subtitle a').css('text-decoration', '')
+            });
+            //Denison click link
+            $(".subtitle a").click(function () {
+                window.open("https://denison.edu/", "_blank");
+            });
+            //About hover highlight/pointer
+            $("#about").hover(function () {
+                $(this).toggleClass("highlight");
+                $('#about').css('cursor', 'pointer');
+            });
+            //About click slide
+            $("#about").click(function () {
+                window.scrollTo({ top: $("header").height(), behavior: 'smooth' });
+            });
+            // Scrolling Effect
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop()) {
+                    $('nav').addClass('black');
+                }
+                else {
+                    $('nav').removeClass('black');
+                }
+            })
+        });
+
+
+
+
+
+    </script>
+</body>
+
+</html>
