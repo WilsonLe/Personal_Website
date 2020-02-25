@@ -135,7 +135,7 @@ nav ul li a {
           display: block;
     }
     header {
-        background: url(/Bannersmall-compressor.jpg) no-repeat 50% 50%;
+        background: url(/Bannersmall-crop.jpg) no-repeat 50% 50%;
         background-size: cover;
     }
     .about{
