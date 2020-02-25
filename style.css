@@ -13,6 +13,31 @@ header {
     background: url(/Banner-compressor.jpg) no-repeat 50% 50%;
     background-size: cover;
 }
+.titles{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.title{
+    width: 100%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    font-size: 4em;
+    letter-spacing: .2em;
+}
+.subtitle{
+    width: 100%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    font-size: 1.25em;
+    letter-spacing: .1em;
+}
 .content {
     width: 94%;
     margin: 4em auto;
@@ -30,9 +55,10 @@ header {
     font-size: 20px;
     letter-spacing: 2px;
 }
+
 nav {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     line-height: 60px;
 }
 nav ul {
@@ -52,7 +78,8 @@ nav.black ul {
 }
 nav ul li {
     display: inline-block;
-    padding: 16px 40px;;
+    padding: 16px 40px;
+    width: 10%;
 }
 nav ul li a {
     text-decoration: none;
@@ -107,6 +134,22 @@ nav ul li a {
     line-height: 2em;
     font-size: 1.25em;
 }
+@media(max-width: 600px){
+    .title{
+        /* width: 100%;
+        padding-top: .5em; */
+        padding-bottom: .1em;
+        font-size: 2.5em;
+        letter-spacing: 7.5px;
+    }
+    .subtitle{
+        /* width: 100%;
+        padding-top: .5em; */
+        padding-bottom: .1em;
+        font-size: .75em;
+        letter-spacing: .75px;
+    }
+}
 @media(max-width: 786px) {
     .home {
           position: fixed;
@@ -135,7 +178,7 @@ nav ul li a {
           display: block;
     }
     header {
-        background: url(/Bannersmall-crop-compressor.jpg) no-repeat 50% 50%;
+        background: url(/Bannersmall-compressor.jpg) no-repeat 50% 50%;
         background-size: cover;
     }
     .about{
