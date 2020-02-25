@@ -8,7 +8,7 @@ var fs = require('fs');
 app.use(express.static('.')) //allow client to browse whole folder
 
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + "/home.html");
+    res.sendFile(__dirname + "/index.html");
 });
 
 //when a client connect, do
