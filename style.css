@@ -134,17 +134,19 @@ nav ul li a {
     line-height: 2em;
     font-size: 1.25em;
 }
+@media(max-width: 1500px){
+    header {
+        background: url(/Bannersmall-compressor.jpg) no-repeat 50% 50%;
+        background-size: cover;
+    }
+}
 @media(max-width: 600px){
     .title{
-        /* width: 100%;
-        padding-top: .5em; */
         padding-bottom: .1em;
         font-size: 2.5em;
         letter-spacing: 7.5px;
     }
     .subtitle{
-        /* width: 100%;
-        padding-top: .5em; */
         padding-bottom: .1em;
         font-size: .75em;
         letter-spacing: .75px;
