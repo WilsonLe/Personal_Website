@@ -79,6 +79,7 @@
             //Home click slide
             $(".home").click(function () {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
+                $("nav ul").toggleClass("showing");
             });
             //Denison hover underline/pointer
             $(".subtitle a").hover(function () {
