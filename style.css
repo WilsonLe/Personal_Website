@@ -10,7 +10,7 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background: url(/Banner.jpg) no-repeat 50% 50%;
+    background: url(/Banner-compressor.jpg) no-repeat 50% 50%;
     background-size: cover;
 }
 .content {
@@ -135,7 +135,7 @@ nav ul li a {
           display: block;
     }
     header {
-        background: url(/Bannersmall.jpg) no-repeat 50% 50%;
+        background: url(/Bannersmall-compressor.jpg) no-repeat 50% 50%;
         background-size: cover;
     }
     .about{
