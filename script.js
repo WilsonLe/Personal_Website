@@ -1,20 +1,25 @@
-var express = require("express");
-var app = express();
-var http = require("http").createServer(app);
-var https = require("https");
-var io = require("socket.io")(http);
-var fs = require('fs');
+const fs = require('fs');
+const credentials = { 
+    key: fs.readFileSync('sslcert/wilsonle.me.key', 'utf8'), 
+    cert: fs.readFileSync('sslcert/wilsonle.me.chained.crt', 'utf8') 
+}
 
+const express = require("express");
+const app = express();
+const http = require("http").createServer(app);
+const https = require("https").createServer(credentials,app);
+const toHTTPS = require('./toHTTPS.js').redirectToHTTPS;
 
+const io = require("socket.io")(https);
 
+app.use(express.static('.')) // allow client to browse whole folder
 
-//create route
-app.use(express.static('.')) //allow client to browse whole folder
+app.use(toHTTPS());
 
+// routing
 app.get('/', function (req, res) {
     res.sendFile(__dirname + "/index.html");
 });
-
 
 
 //when a client connect, do
@@ -25,14 +30,7 @@ io.on('connection', function (socket) {
     })
 })
 
-//create redir http to https
-var privateKey  = fs.readFileSync('sslcert/wilsonle.me.key', 'utf8');
-var certificate = fs.readFileSync('sslcert/wilsonle.me.chained.crt', 'utf8');
-var credentials = { key: privateKey, cert: certificate };
-const toHTTPS = require('./toHTTPS.js').redirectToHTTPS;
-app.use(toHTTPS());
-https.createServer(credentials, app).listen(443);
-http.listen(80);
 
 
-
+http.listen(80)
+https.listen(443)
