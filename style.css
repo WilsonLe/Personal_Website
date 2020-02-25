@@ -60,6 +60,7 @@ header {
     position: fixed;
     float: left;
     padding: 16px 46px;
+    margin:0;
     color: #fff;
     font-weight: bold;
     font-size: 20px;
@@ -170,7 +171,7 @@ nav ul li a {
     .home {
           position: fixed;
           top: 0;
-          margin-top: 16px;
+          margin:0;
     }
     nav ul {
         padding-right: 0;
