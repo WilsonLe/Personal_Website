@@ -6,6 +6,14 @@ var io = require("socket.io")(http);
 var fs = require('fs');
 
 
+//create redir http to https
+var privateKey  = fs.readFileSync('sslcert/wilsonle.me.key', 'utf8');
+var certificate = fs.readFileSync('sslcert/wilsonle.me.chained.crt', 'utf8');
+var credentials = { key: privateKey, cert: certificate };
+const toHTTPS = require('./toHTTPS.js').redirectToHTTPS;
+app.use(toHTTPS());
+https.createServer(credentials, app).listen(443);
+
 
 //create route
 app.use(express.static('.')) //allow client to browse whole folder
@@ -27,12 +35,3 @@ http.listen(80);
 
 
 
-
-
-//redir http to https
-var privateKey  = fs.readFileSync('sslcert/wilsonle.me.key', 'utf8');
-var certificate = fs.readFileSync('sslcert/wilsonle.me.chained.crt', 'utf8');
-var credentials = { key: privateKey, cert: certificate };
-const toHTTPS = require('./toHTTPS.js').redirectToHTTPS;
-app.use(toHTTPS());
-https.createServer(credentials, app).listen(443);
