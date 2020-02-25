@@ -134,6 +134,10 @@ nav ul li a {
     .menu-icon {
           display: block;
     }
+    header {
+        background: url(/Bannersmall.jpg) no-repeat 50% 50%;
+        background-size: cover;
+    }
     .about{
         width: 90%;
         padding: 5%;
@@ -165,8 +169,5 @@ nav ul li a {
         width: 100%;
         padding: 0;
     }
-
-
-
 }
 
