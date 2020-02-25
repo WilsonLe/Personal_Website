@@ -12,9 +12,11 @@ const toHTTPS = require('./toHTTPS.js').redirectToHTTPS;
 
 const io = require("socket.io")(https);
 
+
+app.use(toHTTPS())
+
 app.use(express.static('.')) // allow client to browse whole folder
 
-app.use(toHTTPS());
 
 // routing
 app.get('/', function (req, res) {
