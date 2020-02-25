@@ -14,7 +14,7 @@
 <body>
     <div class="wrapper">
         <header>
-            <nav>
+            <nav class='header-bar'>
                 <div class="menu-icon">
                     <i class="fa fa-bars fa-2x"></i>
                 </div>
@@ -65,6 +65,8 @@
 
 
         $(document).ready(function () {
+            const HeaderBarHeight=$('.header-bar').height();
+            
             // Menu-toggle button
             $(".menu-icon").click(function () {
                 $("nav ul").toggleClass("showing");
@@ -96,7 +98,8 @@
             });
             //About click slide
             $("#about").click(function () {
-                window.scrollTo({ top: $("header").height(), behavior: 'smooth' });
+                $("nav ul").toggleClass("showing");
+                window.scrollTo({ top: ($('header').height()-HeaderBarHeight), behavior: 'smooth' });
             });
             // Scrolling Effect
             $(window).on("scroll", function () {
