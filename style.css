@@ -319,7 +319,7 @@ nav ul li a {
     .projects{
         display:flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         height: 100%;
         padding: 5%;
     }
