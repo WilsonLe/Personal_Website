@@ -303,6 +303,14 @@ nav ul li a {
         border-bottom: 3px solid black;
         font-size: 2em;
     }
+    .mobileaboutpic{
+        display: flex;
+        width: 90vw;
+        height: 90vw;
+        margin:0;
+        padding: 0;
+        background: url(/Bannersmall-compressor.jpg) no-repeat 50% 50%;
+    }
     #aboutcontent{
         padding:0;
         width: 100%;
@@ -333,8 +341,42 @@ nav ul li a {
         line-height: 60px;
         border-bottom: 3px solid black;
     }
-    .projectpic{
-        width: 0;
+    #project1{
+        display: flex; 
+        flex-direction: column;
+    }
+    #projecttext1{
+        padding-right: 0%;
+        padding-left: 0;
+    }
+    #project2{
+        display: flex; 
+        flex-direction: column;
+    }
+    #projecttext2{
+        padding-right: 0;
+        padding-left: 0%;
+    }
+    #project3{
+        display: flex; 
+        flex-direction: column;
+    }
+    #projecttext3{
+        padding-right: 0%;
+        padding-left: 0;
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobileprojectpic{
+        display: flex;
+        width: 100%;
+        height: 90vw;
+        margin:0;
+        padding: 0;
+        background: url(/Bannersmall-compressor.jpg) no-repeat 50% 50%;
     }
     .projecttext{
         width: 100%;
@@ -346,10 +388,9 @@ nav ul li a {
         width: 100%;
         height: 40px;
         font-size: x-large;
-        text-align: left;
+        text-align: center;
         vertical-align: middle;
         line-height: 40px;
-        padding-left: 50px;
     }
     #projecttext2{
         padding-left: 0%;
