@@ -301,9 +301,6 @@ nav ul li a {
         vertical-align: middle;
         line-height: 60px;
         border-bottom: 3px solid black;
-        
-        
-        
         font-size: 2em;
     }
     #aboutcontent{
@@ -318,6 +315,40 @@ nav ul li a {
         flex-direction: column;
         width: 100%;
         padding: 0;
+    }
+    .projects{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+    }
+    .projectsTitle{
+        width: 100%;
+        height: 60px;
+        margin: 0;
+        font-size: xx-large;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 60px;
+        border-bottom: 3px solid black;
+    }
+    .projectpic{
+        width: 0;
+    }
+    .projecttext{
+        width: 100%;
+        height: 100%;
+        line-height: 2em;
+        font-size: 1.25em;
+    }
+    .projecttitle{
+        width: 100%;
+        height: 40px;
+        font-size: x-large;
+        text-align: left;
+        vertical-align: middle;
+        line-height: 40px;
     }
 }
 
