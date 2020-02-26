@@ -85,7 +85,7 @@
                         and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
                         leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
                         with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><a id='project1readmore'>Read more ...</a>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                         and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
                         leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
                         with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><a id='project2readmore'>Read more ...</a>
                     </div>
                 </div>
             </div>
@@ -127,26 +127,25 @@
                         and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
                         leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
                         with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br><a id='project3readmore'>Read more ...</a>
                     </div>
                 </div>
+            </div>
+            <div class='timeline'>
+                <a>View all as timeline</a>
             </div>
         </div>
 
         <div class='contact'>
-
+            
         </div>
     </div>
 
     <script type="text/javascript">
-
-
         $(document).ready(function () {
             const HeaderBarHeight=$('.header-bar').height();
             const BannerHeight = $('header').height();
             const AboutHeight =$('.about').height()+$('.about').width()*0.07;
-            console.log(AboutHeight);
-
             // Menu-toggle button
             $(".menu-icon").click(function () {
                 $("nav ul").toggleClass("showing");
@@ -192,6 +191,33 @@
                 $("nav ul").toggleClass("showing");
                 window.scrollTo({ top: BannerHeight-HeaderBarHeight+AboutHeight, behavior: 'smooth' });
             });
+            //Projects read more hover
+            $("#project1readmore").hover(function () {
+                $('#project1readmore').css('cursor', 'pointer');
+                $('#project1readmore').css('text-decoration', 'underline')
+            }, function () {
+                $('#project1readmore').css('text-decoration', '')
+            });
+            $("#project2readmore").hover(function () {
+                $('#project2readmore').css('cursor', 'pointer');
+                $('#project2readmore').css('text-decoration', 'underline')
+            }, function () {
+                $('#project2readmore').css('text-decoration', '')
+            });
+            $("#project3readmore").hover(function () {
+                $('#project3readmore').css('cursor', 'pointer');
+                $('#project3readmore').css('text-decoration', 'underline')
+            }, function () {
+                $('#project3readmore').css('text-decoration', '')
+            });
+            //Project view all
+            $(".timeline").hover(function () {
+                $('.timeline').css('cursor', 'pointer');
+                $('.timeline').css('text-decoration', 'underline')
+            }, function () {
+                $('.timeline').css('text-decoration', '')
+            });
+            //Project read more link
             // Scrolling Effect
             $(window).on("scroll", function () {
                 if ($(window).scrollTop()) {
@@ -202,11 +228,6 @@
                 }
             })
         });
-
-
-
-
-
     </script>
 </body>
 
