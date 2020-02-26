@@ -76,6 +76,7 @@ nav {
     z-index: 1;
 }
 nav ul {
+    width: 100%;
     line-height: 60px;
     list-style: none;
     background: rgba(0, 0, 0, 0);
@@ -118,7 +119,7 @@ nav ul li a {
 .about{
     display:flex;
     flex-direction: row;
-    width: 70%;
+    width: 80%;
     height: 100%;
     margin:auto;
     padding-top: 5%;
@@ -128,7 +129,7 @@ nav ul li a {
 .aboutpic{
     display:flex;
     width: 50%;
-    background: url(/Banner-compressor.jpg) no-repeat 50% 50%;
+    background: url(/Bannersmall-compressor.jpg) no-repeat 50% 50%;
 }
 #aboutpic{
     width: 100%;
@@ -160,7 +161,7 @@ nav ul li a {
 .projects{
     display:flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
     height: 100%;
     margin:auto;
     padding: 5%;
