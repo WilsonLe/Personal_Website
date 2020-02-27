@@ -1,20 +1,20 @@
 {
   "posts": [
     {
-      "title": "Reasearch about ABCDE",
-      "previewtext": "This is preview text",
+      "title": "Title 1 testing",
+      "previewtext": "as the title said, this is a test version of the blog.",
       "fulltext": "fulltext",
       "timestamp": "6/9/1996"
     },
     {
-      "title": "How the heck did I get here",
-      "previewtext": "What is this?? its a preview text",
+      "title": "Title 2 testing",
+      "previewtext": "as the title said, this is a test version of the blog.",
       "fulltext": "fulltext",
       "timestamp": "16/9/2009"
     },
     {
-      "title": "Damn, preview text 3!!!",
-      "previewtext": "Take a brief read about this research project, Ive been working on it for 69 days",
+      "title": "Title 3 testing",
+      "previewtext": "as the title said, this is a test version of the blog.",
       "fulltext": "fulltext",
       "timestamp": "1/1/2008"
     }
