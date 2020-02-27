@@ -19,4 +19,4 @@ function searchIgnore (value, ignores) {
     }
   }
   
-  exports.redirectToHTTPS = redirectToHTTPS
+exports.redirectToHTTPS = redirectToHTTPS
