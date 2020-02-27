@@ -1,0 +1,9 @@
+{
+    "ignore_watch": [
+        "node_modules",
+        "db.json"
+    ],
+    "watch_options": {
+        "followSymlinks": false
+    }
+}
