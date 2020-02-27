@@ -80,7 +80,7 @@
                     <div class='mobileprojectpic'>
 
                     </div>
-                    <div class='projectcontent'>
+                    <div class='projectcontent'id='projectcontent1'>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the
                         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
@@ -107,7 +107,7 @@
                     <div class='mobileprojectpic'>
 
                     </div>
-                    <div class='projectcontent'>
+                    <div class='projectcontent'id='projectcontent2'>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the
                         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
@@ -134,7 +134,7 @@
                     <div class='mobileprojectpic'>
 
                     </div>
-                    <div class='projectcontent'>
+                    <div class='projectcontent'id='projectcontent3'>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the
                         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
@@ -167,11 +167,11 @@
                 .then(function (response) {
                     // handle success
                     $('#projecttitle1').text(response.data[response.data.length - 3].title);
-                    $('#projecttitle1').text(response.data[response.data.length - 3].previewtext);
+                    $('#projectcontent1').text(response.data[response.data.length - 3].previewtext);
                     $('#projecttitle2').text(response.data[response.data.length - 2].title);
-                    $('#projecttitle2').text(response.data[response.data.length - 2].previewtext);
+                    $('#projectcontent2').text(response.data[response.data.length - 2].previewtext);
                     $('#projecttitle3').text(response.data[response.data.length - 1].title);
-                    $('#projecttitle3').text(response.data[response.data.length - 1].previewtext);
+                    $('#projectcontent3').text(response.data[response.data.length - 1].previewtext);
                 })
                 .catch(function (error) {
                     // handle error
