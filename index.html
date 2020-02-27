@@ -166,12 +166,12 @@
             axios.get('/posts')
                 .then(function (response) {
                     // handle success
-                    $('#projecttitle1').text(response.data[response.data.length - 3].title);
-                    $('#projectcontent1').text(response.data[response.data.length - 3].previewtext);
+                    $('#projecttitle1').text(response.data[response.data.length - 1].title);
+                    $('#projectcontent1').text(response.data[response.data.length - 1].previewtext);
                     $('#projecttitle2').text(response.data[response.data.length - 2].title);
                     $('#projectcontent2').text(response.data[response.data.length - 2].previewtext);
-                    $('#projecttitle3').text(response.data[response.data.length - 1].title);
-                    $('#projectcontent3').text(response.data[response.data.length - 1].previewtext);
+                    $('#projecttitle3').text(response.data[response.data.length - 3].title);
+                    $('#projectcontent3').text(response.data[response.data.length - 3].previewtext);
                 })
                 .catch(function (error) {
                     // handle error
