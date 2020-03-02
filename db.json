@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "title": "About me test",
+      "previewtext": "",
+      "fulltext": "fulltext",
+      "timestamp": "29/7/2002"
+    },
+    {
       "title": "Title 1 testing",
       "previewtext": "as the title said, this is a test version of the blog.",
       "fulltext": "fulltext",

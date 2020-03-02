@@ -129,24 +129,14 @@
                 </div>
                 <div class='projecttext' id='projecttext3'>
                     <div class='projecttitle'id='projecttitle3'>
-                        Project title NO.3
+                        
                     </div>
                     <div class='mobileprojectpic'>
 
                     </div>
                     <div class='projectcontent'id='projectcontent3'>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                        the
-                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                        1960s
-                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                        desktop
-                        publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br><a
-                            id='project3readmore'>Read more ...</a>
+                         <br>
+                        <a id='project3readmore'>Read more ...</a>
                     </div>
                 </div>
             </div>
@@ -166,6 +156,8 @@
             axios.get('/posts')
                 .then(function (response) {
                     // handle success
+                    $('#abouttitle').text(response.data[0].title);
+                    $('#aboutcontent').text(response.data[0].fulltext);
                     $('#projecttitle1').text(response.data[response.data.length - 1].title);
                     $('#projectcontent1').text(response.data[response.data.length - 1].previewtext);
                     $('#projecttitle2').text(response.data[response.data.length - 2].title);
