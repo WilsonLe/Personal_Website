@@ -1,10 +1,10 @@
 {
   "posts": [
     {
-      "title": "About me test",
+      "title": "About me",
       "previewtext": "",
-      "fulltext": "fulltext",
-      "timestamp": "29/7/2002"
+      "fulltext": "Hi, my name is Wilson Le. I'm an 17-year-old Vietnamese, currently a senior year student at Tran Dai Nghia highschool. I'm into computer science and soon will be enrolling at Denison University as a computer science major. This website will be my journal, writing about the projects that I have done.",
+      "timestamp": "21/3/2020"
     },
     {
       "title": "Title 1 testing",
@@ -25,10 +25,10 @@
       "timestamp": "1/1/2008"
     },
     {
-      "title": "Title 4 testing",
-      "previewtext": "as the title said, this is a test version of the blog.",
+      "title": "Mobile car detection and distance measuring",
+      "previewtext": "Imagine you are in a car on the highway and ahead of you is a minivan. Out of the sudden, the minivan driver slams the brake and now your headlight is in the minivan's trunk. After the accident, you thought to yourself, how am I suppose to know the safe distance I should keep in order to not have my headlight shattered. This project's goal is to create an android app that will tackle the problem of finding out the safe distance you should keep from the vehicle (object) in front. With the input of your phone's camera, your car will have the luxury of object detection.",
       "fulltext": "fulltext",
-      "timestamp": "1/1/2008"
+      "timestamp": "21/3/2020"
     }
   ]
 }
