@@ -227,7 +227,7 @@ nav ul li a {
     height: 40px;
     font-size: xx-large;
     text-align: left;
-    
+    border-bottom: 2px solid black;
     line-height: 40px;
 }
 .timeline{

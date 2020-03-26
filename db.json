@@ -7,28 +7,16 @@
       "timestamp": "21/3/2020"
     },
     {
-      "title": "Title 1 testing",
-      "previewtext": "as the title said, this is a test version of the blog.",
-      "fulltext": "fulltext",
-      "timestamp": "6/9/1996"
-    },
-    {
-      "title": "Title 2 testing",
-      "previewtext": "as the title said, this is a test version of the blog.",
-      "fulltext": "fulltext",
-      "timestamp": "16/9/2009"
-    },
-    {
-      "title": "Title 3 testing",
-      "previewtext": "as the title said, this is a test version of the blog.",
-      "fulltext": "fulltext",
-      "timestamp": "1/1/2008"
-    },
-    {
       "title": "Mobile car detection and distance measuring",
       "previewtext": "Imagine you are in a car on the highway and ahead of you is a minivan. Out of the sudden, the minivan driver slams the brake and now your headlight is in the minivan's trunk. After the accident, you thought to yourself, how am I suppose to know the safe distance I should keep in order to not have my headlight shattered. This project's goal is to create an android app that will tackle the problem of finding out the safe distance you should keep from the vehicle (object) in front. With the input of your phone's camera, your car will have the luxury of object detection.",
       "fulltext": "fulltext",
       "timestamp": "21/3/2020"
+    },
+    {
+      "title": "Project VIAN",
+      "previewtext": "A super app that has many small apps inside. With a nicely designed graphical user interface, anyone can easily use many of its feature. Users are able to download uninstall any small apps, whatever suit the their need. There are app packages that are made for certain types of audiences. For instance, there will be student packages, where the app in there are made to support student on their productivity and learning resources. The goal here is to implement built in voice recognition in order for VIAN to receive orders from the user.",
+      "fulltext": "",
+      "timestamp": ""
     }
   ]
 }
