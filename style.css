@@ -1,0 +1,18 @@
+body{
+    margin: 0px;;
+}
+header{
+    display: block;
+    position: fixed;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+
+.center{
+    display:flex;
+    justify-content: space-around;
+}
+#high{
+    height: 150vh;
+}
